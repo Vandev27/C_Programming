@@ -1,0 +1,24 @@
+//Write a programme to create structure in c using pointer.
+#include<stdio.h>
+struct Employee
+{
+	int eid;
+	char ename[20];
+	float esal;
+};
+void main()
+{
+    struct Employee e1,*e;
+	printf("Enter the detail of employee\n");
+	printf("Enter the employee ID\n");
+	scanf("%d",&e1.eid); 
+	printf("Enter the employee Name\n");
+	scanf("%s",&e1.ename); 
+	printf("Enter the employee Sallary\n");
+	scanf("%f",&e1.esal); 	
+	e=&e1;
+	printf("Display the details of Employee\n");
+	printf("Eid = %d\n",e->eid);
+	printf("EName = %s\n",e->ename);
+	printf("ESallary = %.2f\n",e->esal);
+}
